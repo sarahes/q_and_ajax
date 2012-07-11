@@ -1,0 +1,15 @@
+q1* line-height: 100px; set the height of your menu line. But keep enough space in horizontal dimension, otherwize you will get crazy view. Look forward to min-width, width or overflow-x rules. 
+
+q1* Setting the line-height to the desired value fixes the issue but it is not a correct way to do it. It is just a hack. The correct way is to use vertical-align property (for all the anchors inside the menu div)
+
+q2* CSS classes are meant to be reused. CSS IDs are meant to be used uniquely on a component. Are you sure you're using a css class? 
+
+q2* In css, class is meant to be reused, so it is ok. In case you don't know about id, id in css is meant to be used noce. But nowadays, I've seen few people use class all over place even they just use it once. So, just keep your markup and styling clear, use class or id in your way if you work alone [ personal project ] and keep it persistence when working alone or in a team. 
+
+q3* This seems like the likely answer: A floated box is taken out of the flow, so it doesn’t affect the block-level boxes around it. 
+
+q4*
+
+q5* For a pure JavaScript solution, try (untested): <code>var city = responseXML.getElementsByName('City').parentNode.nextElementSibling.childNodes[0].getAttribute('textContent'); </code>
+
+q6* No benefit from absolute versus relative as long as the reference gets properly resolved. As for portability, this is one of those "it depends" situations.
